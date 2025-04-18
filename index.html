@@ -12,18 +12,20 @@
 
 <body>
 
+  <!-- top버튼 -->
   <div class="topbtn">
     <img src="images/topbtn.png" alt="topbtn">
   </div>
 
+  <!-- 스크롤 이동시 top메뉴 -->
   <div class="topwrap">
     <div class="topuphead">
       <div class="topheadLeft">
         <img src="images/logopen1.png">
           <ul class="topnavi">
-            <li><a href="#">HOME</a></li>
+            <li><a href="index.html">HOME</a></li>
             <li><a href="#">NOTICE</a></li>
-            <li><a href="#">ARTIST</a></li>
+            <li><a href="artist.html">ARTIST</a></li>
             <li><a href="#">COMMUNITY</a></li>
             <li><a href="#">SHOP</a></li>
             <li><a href="#">CONTACT US</a></li>
@@ -34,19 +36,20 @@
         <a href="#"><i class="fa-solid fa-bell"></i></a>
         <a href="#"><i class="fa-solid fa-calendar"></i></a>
         <a href="#"><i class="fa-solid fa-basket-shopping"></i></a>
-        <a href="#"><i class="fa-solid fa-user"></i></a>
+        <a href="#" onclick="popup()"><i class="fa-solid fa-user"></i></a>
       </div>
     </div>
 
   <header>
+    <!-- 탑메뉴 -->
     <div class="wrap">
     <div class="uphead">
       <img src="images/bg.jpg" alt="picture">
       <div class="headLeft">
           <ul class="navi">
-            <li><a href="#">HOME</a></li>
+            <li><a href="index.html">HOME</a></li>
             <li><a href="#">NOTICE</a></li>
-            <li><a href="#">ARTIST</a></li>
+            <li><a href="artist.html">ARTIST</a></li>
             <li><a href="#">COMMUNITY</a></li>
             <li><a href="#">SHOP</a></li>
             <li><a href="#">CONTACT US</a></li>
@@ -57,15 +60,40 @@
         <a href="#"><i class="fa-solid fa-bell"></i></a>
         <a href="#"><i class="fa-solid fa-calendar"></i></a>
         <a href="#"><i class="fa-solid fa-basket-shopping"></i></a>
-        <a href="#"><i class="fa-solid fa-user"></i></a>
+        <a href="#" onclick="popup()"><i class="fa-solid fa-user"></i></a>
       </div>
     </div>
+
+    <!-- 로그인 팝업 -->
+
+    <div class="login">
+      <div class="container">
+        <div class="close">
+          <button onclick="pClose()">x</button></div>
+        <form>
+          <p>
+            <label for="user">사용자명 또는 이메일 주소</label><br>
+            <input type="text" id="user" name="user">
+          </p>
+          <p>
+            <label for="pw">암호</label><br>
+            <input type="password" id="pw" name="pw">
+          </p>
+          <button type="submit">로그인</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- 이미지 메뉴 -->
     <div class="downhead">
       <div class="logo">
         <img src="images/logopen1.png" alt="logo">
       </div>
       <div class="headbtn">
         <a href="scene.html">HAPPY</a>
+      </div>
+      <div class="headbtn">
+        <a href="music.html">MUSIC</a>
       </div>
     </div>
   </div>
@@ -75,25 +103,83 @@
   <main>
     <div class="filmo">
       <h2>FILMOGRAPHY</h2>
-      <div class="filmoimg">
-        <img src="images/poster1.jpg" alt="poster1">
-        <img src="images/poster2.jpg" alt="poster2">
-        <img src="images/poster3.jpg" alt="poster3">
-        <img src="images/poster4.jpg" alt="poster4">
-      </div>
+      <ul class="filmoimg">
+        <li>
+          <img src="images/poster1.jpg" alt="poster1">
+          <p>말할 수 없는 비밀 (2025)</p>
+        </li>
+        <li>
+          <img src="images/poster2.jpg" alt="poster2">
+          <p>콩 심은데 콩 나고 밥 먹으면 밥심 난다 (2025)</p>
+        </li>
+        <li>
+          <img src="images/poster3.jpg" alt="poster3">
+          <p>콩 심은데 콩 나고 팥 심은데 팥 난다(2023)</p>
+        </li>
+        <li>
+          <img src="images/poster4.jpg" alt="poster4">
+          <p>더 문 (2023)</p>
+        </li>
+        <li>
+          <img src="images/poster5.jpg" alt="poster5">
+          <p> 수학 없는 수학여행(2023)</p>
+        </li>
+        <li>
+          <img src="images/poster6.jpg" alt="poster6">
+          <p>진검승부 (2022)</p>
+        </li>
+        <li>
+          <img src="images/poster7.jpg" alt="poster7">
+          <p>잠적 (2022)</p>
+        </li>
+        <li>
+          <a href="artist.html"><img src="images/more.jpg" alt="poster
+          8"></a>
+        </li>
+      </ul>
+      <div class="prev" alt=""><img src="images/leftbtn.png"></div>
+      <div class="next" alt=""><img src="images/rightbtn.png"></div>
     </div>
 
     <div class="disco">
       <h2>DISCOGRAPHY</h2>
-      <div class="discoimg">
-        <img src="images/disco1.jpg" alt="poster1">
-        <img src="images/disco2.jpg" alt="poster2">
-        <img src="images/disco3.jpg" alt="poster3">
-        <img src="images/disco4.jpg" alt="poster4">
-      </div>
+      <ul class="discoimg">
+        <li>
+          <img src="images/disco7.jpg" alt="poster7">
+          <p>Doh Kyungsoo Concert</p>
+        </li>
+        <li>
+          <img src="images/disco1.jpg" alt="poster1">
+          <p>밤에 내린 눈 (Snowfall at Night)</p>
+        </li>
+        <li>
+          <img src="images/disco2.jpg" alt="poster2">
+          <p>The 3rd Mini Album 성장</p>
+        </li>
+        <li>
+          <img src="images/disco3.jpg" alt="poster3">
+          <p>The 2nd Mini Album 기대</p>
+        </li>
+        <li>
+          <img src="images/disco4.jpg" alt="poster4">
+          <p>The 1st Mini Album 공감</p>
+        </li>
+        <li>
+          <img src="images/disco5.jpg" alt="poster5">
+          <p>괜찮아도 괜찮아(That's okay)</p>
+        </li>
+        <li>
+          <img src="images/disco6.jpg" alt="poster6">
+          <p>EXO D.O.</p>
+        </li>
+        
+        <li>
+          <a href="artist.html"><img src="images/more.jpg" alt="poster8"></a>
+        </li>
+      </ul>
+      <div class="prev" alt=""><img src="images/leftbtn.png"></div>
+      <div class="next" alt=""><img src="images/rightbtn.png"></div>
     </div>
-
-
   </main>
 
 
@@ -106,7 +192,7 @@
       </ul>
       <ul class="address">
         <li>pugoni@hanmail.net</li>
-        <li>+82 10 5252 0742</li>
+        <li>+82 10 1993 0112</li>
       </ul>
       <div class="links">
         <ul>
@@ -120,15 +206,15 @@
   </footer>
 
 
-
+  <!-- down nav -->
   <div class="downnav">
     <a href="index.html"><i class="fa-solid fa-house-user"></i><span>HOME</span></a>
     
-    <a href="#"><i class="fa-solid fa-book-open"></i><span>NOTICE</span></a>
-    <a href="#"><i class="fa-solid fa-heart"></i><span>ARTIST</span></a>
+    <a href="notice.html"><i class="fa-solid fa-book-open"></i><span>NOTICE</span></a>
+    <a href="artist.html"><i class="fa-solid fa-heart"></i><span>ARTIST</span></a>
     <a href="#"><i class="fa-solid fa-rectangle-list"></i><span>COMMUNITY</span></a>
     <a href="#"><i class="fa-solid fa-store"></i><span>SHOP</span></a>
-    <a href="scene.html"><i class="fa-solid fa-paper-plane"></i><span>CONTACT US</span></a>
+    <a href="#"><i class="fa-solid fa-paper-plane"></i><span>CONTACT US</span></a>
   </div>
 </body>
 

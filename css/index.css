@@ -1,24 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
-
-/*css변수*/
-:root {
-  --bg-color : #bfd9f2;
-  --foot-color : #95badf;
-  --text-color : #555;
-  --white : #f1f1f1;
-  --gray : #ccc;
-  --accent-color : #8baab9;
-
-  --padding-ex-lg : 160px;
-  --padding-lg : 100px;
-  --padding-md : 60px;
-  --padding-sm : 40px;
-  --padding-mc : 20px;
-
-  --font-lg : 24px;
-  --font-md : 18px;
-  --font-sm : 14px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
 
 
 
@@ -31,8 +12,8 @@ body {
 }
 
 header {
-  min-width: 1280px;
   background-color: #fff;
+  position: relative;
 }
 
 .wrap {
@@ -67,7 +48,7 @@ header {
 
 .wrap .uphead .headLeft a:hover {
   transform: scale(1.1);
-  color: #331206;
+  color: cadetblue;
   font-weight: bold;
 }
 
@@ -87,7 +68,70 @@ header {
 
 .wrap .headRight i:hover {
   transform: scale(1.1);
-  color: #331206;
+  color: cadetblue;
+}
+
+.login {
+  display: none;
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background-color: rgba(0,0,0,0.8);
+  z-index: 120;
+}
+.login > .container {
+  width: 300px;
+  height: 300px;
+  background-color: #fff;
+  position: absolute;
+  top: 20vw;
+  left: calc(50%); 
+}
+.login .close {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: right;
+}
+.login .close button {
+  border: none;
+  background-color: transparent;
+  font-size: 30px;
+  color: #666;
+  font-weight: bold;
+  cursor: pointer;
+}
+.login .close button:hover {
+  color: cadetblue;
+}
+
+.login form {
+  padding: 20px 40px;
+}
+.login label {
+  color: #333;
+  font-family: "Dongle";
+  font-size: 18px;
+  line-height: 2;
+}
+.login input {
+  width: 100%;
+  height: 30px;
+  text-indent: 10px;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  margin-bottom: 10px;
+}
+.login button[type=submit]{
+  width: 100%;
+  height: 30px;
+  background-color: #111;
+  border: none;
+  color: #fff;
+  margin-top: 16px;
+  cursor: pointer;
+  font-family: "Dongle";
+}
+.login button[type=submit]:hover {
+  background-color: cadetblue;
 }
 
 .downhead {
@@ -97,8 +141,13 @@ header {
   text-align: center;
 }
 
+.downhead img {
+  width: 100%;
+}
+
 .downhead .headbtn {
   margin-top: 20px;
+  display: inline-block;
 
 }
 
@@ -110,14 +159,22 @@ header {
   background-color: mintcream;
   font-family: "Exo 2";
   font-weight: bold;
+  display: flex;
 }
 
 .downhead .headbtn a:hover {
   font-weight: bold;
-  color: #331206;
+  color: #555;
   background-color: cadetblue;
 }
 
+.filmo {
+  max-width: 1300px;
+  width:100vw;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+}
 
 .filmo h2 {
   font-family: "Exo 2";
@@ -125,22 +182,54 @@ header {
   margin: 30px;
 }
 .filmoimg {
+  width:200%;
   display: flex;
-  justify-content: space-between;
-  gap: 10px;
-  margin: 20px;
 }
 
-.filmoimg img{
-  width: 100%;
+.filmoimg li{
+  padding:0 20px;
+  width: 25%;
   height: auto;
-  max-width: 23%;
-  object-fit: cover;
-  border-radius: 2px;
 }
+.filmoimg li img{
+  width:100%;
+  height:80%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.filmoimg li p {
+  font-family: "Dongle";
+  align-items: center;
+  font-size: 25px;
+}
+
+main .filmo .prev,
+main .filmo .next {
+  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.9;
+  z-index: 1;
+  cursor: pointer;
+}
+.prev {left: 0;}
+.next {right: 0;}
+
+
+main .filmo:hover .prev,
+main .filmo:hover .next {
+  display: block;
+}
+
+
 
 .disco {
-  margin-top: 100px;
+  max-width: 1300px;
+  width:100vw;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
 }
 
 .disco h2 {
@@ -149,19 +238,45 @@ header {
   margin: 30px;
 }
 .discoimg {
+  width:200%;
   display: flex;
-  justify-content: space-between;
-  gap: 10px;
-  margin: 20px;
 }
 
-.discoimg img{
-  width: 100%;
+.discoimg li{
+  padding:0 20px;
+  width: 25%;
   height: auto;
-  max-width: 23%;
-  object-fit: cover;
-  border-radius: 2px;
 }
+.discoimg li img{
+  width:100%;
+  height:80%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.discoimg li p {
+  font-family: "Dongle";
+  align-items: center;
+  font-size: 25px;
+}
+
+main .disco .prev,
+main .disco .next {
+  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.9;
+  z-index: 1;
+  cursor: pointer;
+}
+.prev {left: 0;}
+.next {right: 0;}
+
+main .disco:hover .prev,
+main .disco:hover .next {
+  display: block;
+}
+
 
 
 footer {
@@ -172,8 +287,9 @@ footer {
   background-color: #f1f1f1;
 }
 footer .wrap {
+  max-width: 1300px;
   margin: auto;
-  padding: 80px 60px;
+  padding: 60px 10px;
   line-height: 25px;
   font-size: 14px;
   display: flex;
@@ -214,7 +330,7 @@ footer .links i {
   width: 100px;
   height: 100px;
   position: fixed;
-  bottom: 5px; right: 5px;
+  bottom: 40px; right: 5px;
   z-index: 999;
   cursor: pointer;
 }
@@ -228,7 +344,7 @@ footer .links i {
   position: fixed;
   opacity: 0.8;
   top: 0;
-  
+  z-index: 999;
 }
 
 .topheadLeft {
@@ -264,7 +380,7 @@ footer .links i {
 
 .topwrap .topuphead .topheadLeft a:hover {
   transform: scale(1.1);
-  color: #331206;
+  color: #555;
   font-weight: bold;
 }
 
@@ -284,12 +400,12 @@ footer .links i {
 
 .topwrap .topheadRight i:hover {
   transform: scale(1.1);
-  color: #331206;
+  color: #555;
 }
 
 
 .downnav {
-  width: 100%;
+  width: 100vw;
   height: 60px;
   position: fixed;
   display: none;
@@ -298,8 +414,8 @@ footer .links i {
   background: #fff;
   opacity: 0.8;
   bottom: 0;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .downnav a {
@@ -320,6 +436,30 @@ footer .links i {
   transform: scale(1.1);
 }
 
+@media screen and (max-width:1024px) {
+  .filmoimg {
+    width:2048px;
+  }
+  
+  .filmoimg li{
+    width: 33.3333%;
+  }
+  .discoimg {
+    width:2048px;
+  }
+  
+  .discoimg li{
+    width: 33.3333%;
+  }
+
+  footer {
+    width: 100%;
+    overflow: hidden;
+  }
+  footer .wrap {
+    width: 1024px;
+  }
+}
 
 /*810px 미만*/
 @media screen and (max-width:899px) {
@@ -332,5 +472,36 @@ footer .links i {
   .downnav {
     display: flex;
   }
+
+  .login > .container {
+   top: 20%;
+   left: 50%;
+   transform: translate(-50%, -50%);  
+  }
+
+  footer ul {
+    margin-right: 10px;
+  }
+  .downhead{
+    transform:translateY(-50%);
+  }
+
+  .downnav a {
+    width: 68px;
+    height: 44px;
+  }
+  
+  .downhead img {
+    width: 50%;
+    height: auto;
+  }
+  
+  .filmoimg li p {
+    font-size: 20px;
+  }
+  .discoimg li p {
+    font-size: 20px;
+  }
+
 }
 

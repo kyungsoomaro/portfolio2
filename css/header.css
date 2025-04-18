@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+
+
+/* 공통 */
+* {margin: 0; padding: 0; box-sizing: border-box;}
+ul {list-style: none;}
+a {text-decoration: none;}
+
+body {
+  overflow-x: hidden;
+}
+
+/* 탑버튼 */
+
+.topbtn {
+    display: none;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    bottom: 40px; right: 5px;
+    z-index: 999;
+    cursor: pointer;
+  }
+
+/* 스크롤 후 탑메뉴 */
+
+  .topwrap {
+    display: none;
+    font-family: "Exo 2";
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    position: fixed;
+    opacity: 0.8;
+    top: 0;
+    z-index: 999;
+  }
+  
+  .topheadLeft {
+    display: flex;
+    align-items: center;
+  }
+  .topuphead img {
+    width: 30px;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .topwrap .topuphead .topheadLeft {
+    position: absolute;
+    top: 10%;
+    left: 7%;
+  }
+  
+  .topwrap .topuphead .topheadLeft ul {
+    display: flex;
+    padding: 15px;
+  }
+  
+  .topwrap .topuphead .topheadLeft a {
+    display: inline-block;
+    color: cadetblue;
+    opacity: 0.7;
+    margin-left: 20px;
+    transition: 0.3s ease;
+  }
+  
+  .topwrap .topuphead .topheadLeft a:hover {
+    transform: scale(1.1);
+    color: #555;
+    font-weight: bold;
+  }
+  
+  .topwrap .topheadRight {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+  }
+  
+  .topwrap .topheadRight i {
+    color: cadetblue;
+    opacity: 0.7;
+    padding: 15px;
+    font-size: 20px;
+    transition: 0.3s ease;
+  }
+  
+  .topwrap .topheadRight i:hover {
+    transform: scale(1.1);
+    color: #555;
+  }
+
+  /* 해더 */
+
+header {
+  background-color: #fff;
+  position: relative;
+  height:50px;
+  max-width: 1300px;
+  margin: auto;
+}
+
+/* 탑메뉴 */
+
+.wrap {
+  font-family: "Exo 2";
+}
+
+.wrap .uphead {
+  margin-top: 15px;
+}
+
+.wrap .uphead .headLeft {
+  position: absolute;
+  top: 5%;
+  left: 10%;
+}
+
+.wrap .uphead .headLeft ul {
+  display: flex;
+  gap: 25px;
+}
+
+.wrap .uphead .headLeft a {
+  display: inline-block;
+  color: #555;
+  opacity: 0.7;
+  transition: 0.3s ease;
+}
+
+.wrap .uphead .headLeft a:hover {
+  transform: scale(1.1);
+  color: cadetblue;
+  font-weight: bold;
+}
+
+.wrap .headRight {
+  position: absolute;
+  top: 5%;
+  right: 10%;
+}
+
+.wrap .headRight i {
+  color: #555;
+  opacity: 0.7;
+  padding: 0 10px 0 10px;
+  font-size: 20px;
+  transition: 0.3s ease;
+}
+
+.wrap .headRight i:hover {
+  transform: scale(1.1);
+  color: cadetblue;
+}
+
+/* 로그인창 */
+
+.login {
+  display: none;
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background-color: rgba(0,0,0,0.8);
+  z-index: 120;
+}
+.login > .container {
+  width: 300px;
+  height: 300px;
+  background-color: #fff;
+  position: absolute;
+  top: 20vw;
+  left: calc(50%); 
+}
+.login .close {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: right;
+}
+.login .close button {
+  border: none;
+  background-color: transparent;
+  font-size: 30px;
+  color: #555;
+  font-weight: bold;
+  cursor: pointer;
+}
+.login .close button:hover {
+  color: cadetblue;
+}
+
+.login form {
+  padding: 20px 40px;
+}
+.login label {
+  color: #333;
+  font-family: "Dongle";
+  font-size: 18px;
+  line-height: 2;
+}
+.login input {
+  width: 100%;
+  height: 30px;
+  text-indent: 10px;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  margin-bottom: 10px;
+}
+.login button[type=submit]{
+  width: 100%;
+  height: 30px;
+  background-color: #111;
+  border: none;
+  color: #fff;
+  margin-top: 16px;
+  cursor: pointer;
+  font-family: "Dongle";
+}
+.login button[type=submit]:hover {
+  background-color: cadetblue;
+}
+
+/* 풋터 */
+
+footer {
+    font-family: "Exo 2";
+    border-top: 1px #ddd;
+    width: 100%;
+    height: auto;
+    background-color: #f1f1f1;
+  }
+  footer .wrap {
+    max-width: 1300px;
+    margin: auto;
+    padding: 60px 10px;
+    line-height: 25px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    color: #bcbcbc;
+  }
+  
+  footer .author li:first-child {
+    font-size: 16px;
+    font-weight: bold;
+    color: #331206;
+    margin-bottom: 20px;
+  }
+  
+  footer .links {
+    display: flex;
+    gap: 70px;
+    
+  }
+  
+  footer .links a {
+    color: #bcbcbc;
+    transition: 0.3s ease;
+  }
+  
+  footer .links a:hover {
+    color: #331206;
+  }
+  
+  footer .links i {
+    padding-right: 20px;
+  }
+  
+/* 화면크기 조정시 하단 네비게이션 */
+
+  .downnav {
+    width: 100vw;
+    height: 60px;
+    position: fixed;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    opacity: 0.8;
+    bottom: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+    z-index: 999;
+  }
+  
+  .downnav a {
+    text-align: center;
+    color: cadetblue;
+  }
+  .downnav i {
+    display: block;
+    font-size: 20px;
+    margin-right:5px;
+  }
+  .downnav span {
+    font-family: "Exo 2";
+    font-size: 12px;
+  }
+  .downnav a:hover {
+    color: cadetblue;
+    transform: scale(1.1);
+  }
