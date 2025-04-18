@@ -357,11 +357,11 @@ figure .btnNext:hover::after{
     width:190px;
     height:770px;
     margin-left:-95px;
-    /* position:absolute;
+    position:absolute;
     left:50%;
     top:140%;
     margin-top:-25vh;
-    transition: 1s; */
+    transition: 1s;
   }
 
   figure section article .inner{
@@ -419,10 +419,15 @@ figure .btnNext{
 
 }
 
+figure section article .inner .txt {
+  margin-bottom: 15vh;
+}
+
 @media screen and (max-height:980px) {
   
 
   figure > p {
     display: none;
   }
+
 }

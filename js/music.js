@@ -56,7 +56,7 @@ lists.forEach(el => {
   //모든 article요소의 자손인 pic요소를 선택
   const pic = el.querySelector(".pic")
   //배경이미지 추가, index는 0부터지만 이미지는 1부터이므로 i+1로 작성 
-  pic.style.backgroundImage = `url(../images/member${i+1}.jpg)`;
+  pic.style.backgroundImage = `url(../portfolio2/images/member${i+1}.jpg)`;
 
   //모든 article요소를 45도씩 회전하고 아래로 배치
   el.style.transform = `rotate(${deg*i}deg) translateY(-100vh)`;
