@@ -293,6 +293,7 @@ section > article:nth-child(5) {
 }
 
 @media screen and (max-width:899px) {
+  
   h1 img {
     display: none;
   }
@@ -346,7 +347,7 @@ section > article:nth-child(5) {
   }
   .scrollNav {
     left: 10vw;
-    top: 55vh;
+    top: 45vh;
   }
   .scrollNav li {
     width: 120px;
