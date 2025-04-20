@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+/*노말라이즈*/
+* {margin: 0; padding: 0; user-select: none;}
+ul {list-style: none;}
+a {text-decoration: none;}
+
+body {
+  width: 100%;
+  height: 23000px;/*전체 높이*/
+  font-family: "Exo 2";
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+/*배경이미지*/
+.bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: url(../images/noticebg.jpg) center top/cover;
+}
+/*로고*/
+h1 {
+  position: fixed;
+  top: 40px;
+  left: 60px;
+  z-index: 2;
+}
+h1 img {
+  width: 120px;
+  opacity: 0.7;
+}
+
+/*gnb*/
+.gnb {
+  position: fixed;
+  top: 50px;
+  right: 10%;
+  z-index: 2;
+  display: flex;
+  gap: 30px;
+}
+.gnb a {
+  font-size: 14px;
+  font-weight: bold;
+  color: #ddd;
+  opacity: 0.6;
+  transition: all 0.6s;
+}
+.gnb a:hover {
+  color: cadetblue;
+  opacity: 1;
+  font-size: 1.3em;
+}
+
+/*scrollNav*/
+.scrollNav {
+  position: fixed;
+  left: 100px;
+  top: 300px;
+  z-index: 10;
+}
+.scrollNav li {
+  position: relative;
+  width: 150px;
+  height: 35px;
+  margin-bottom: 20px;
+  color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+.scrollNav li:last-child {
+  cursor: none;
+  padding-top: 12px;
+}
+
+.scrollNav li span {
+  display: block;
+  width: 3%;
+  height: 100%;
+  box-shadow: 1px 1px 1px #000;
+  background: #ff0f51;
+  position: absolute;
+  transform: skewX(-30deg);
+}
+.scrollNav li.on span {width: 100%;}
+.scrollNav li:nth-child(2) span {background: #fffb02;}
+.scrollNav li:nth-child(3) span {background: #b57de4;}
+.scrollNav li:nth-child(4) span {background: #7cf023;}
+.scrollNav li:nth-child(5) span {background: #3dbdfa;}
+
+.scrollNav li em {
+  position: absolute;
+  top: 8px;
+  left: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.scrollNav li p {
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.copyright {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  font-family: "Exo 2";
+  color: #ddd;
+}
+
+/*컨텐츠 영역*/
+section {
+  position: fixed;
+  width: 1200px;
+  height: 700px;
+  /*중앙 배치*/
+  top: 50%; left: 50%;
+  margin-top: -350px;
+  margin-left: -600px;
+  perspective: 2300px; /*원근감*/
+  z-index: 1;
+}
+section > article {
+  width: 1200px;
+  height: 700px;
+  position: absolute;
+  opacity: 0.5;
+  z-index: 15;
+}
+/*이미지 겹치기*/
+section article img {position: absolute;}
+
+section article.on {
+  opacity: 1;
+  z-index: 20;
+}
+
+/*페이지 공통속성*/
+section > article >p {
+  position: absolute;
+  width: 450px;
+  padding: 30px 60px;
+  color: #fff;
+  opacity: 1;
+}
+section > article > p > span {
+  font-family: "Exo 2";
+  font-size: 60px;
+  letter-spacing: 0;
+  line-height: 1.5;
+  display: block;
+}
+
+/*1페이지*/
+section > article:nth-child(1) p {
+  bottom: 100px; right: -100px;
+}
+section > article:nth-child(1) p span {
+  color: #ff0f51;
+}
+
+이미지 재배치
+.obt11 {
+  bottom: -100px;
+  left: -270px;
+}
+.obj12 {
+  top: -85px;
+  right: -90px;
+}
+.obj13 {
+  bottom: 20px;
+  left: -100px;
+}
+
+/*2페이지*/
+section > article:nth-child(2) p {
+  bottom: 200px; left: 100px;
+}
+section > article:nth-child(2) p span {
+  color: #fffb02;
+}
+
+/*이미지 재배치*/
+.obt21 {
+  bottom: -420px;
+  left: -700px;
+}
+.obj22 {
+  bottom: -100px;
+  right: -50px;
+}
+
+/*3페이지*/
+section > article:nth-child(3) p {
+  bottom: 300px; right: -100px;
+}
+section > article:nth-child(3) p span {
+  color: #b57de4;
+}
+
+/*이미지 재배치*/
+.obt31 {
+  bottom: 70px;
+  left: 110px;
+}
+.obj32 {
+  bottom: -160px;
+  left: 100px;
+}
+
+/*4페이지*/
+section > article:nth-child(4) p {
+  bottom: 290px; left: 100px;
+}
+section > article:nth-child(4) p span {
+  color: #7cf023;
+}
+
+/*이미지 재배치*/
+.obt41 {
+  bottom: -150px;
+  left: 350px;
+}
+.obj42 {
+  top: -250px;
+  right: 200px;
+}
+.obj43 {
+  bottom: -120px;
+  right: -100px;
+}
+
+/*5페이지*/
+section > article:nth-child(5) p {
+  bottom: 100px; right: -150px;
+}
+section > article:nth-child(5) p span {
+  color: #3dbdfa;
+}
+
+/*이미지 재배치*/
+.obt51 {
+  bottom: -200px;
+  left: -100px;
+}
+.obj52 {
+  top: -50px;
+  right: 320px;
+}
+.obj53 {
+  bottom: 0px;
+  left: -30px;
+}
+
+section > article:nth-child(1) {
+  transform: translateZ(0);
+}
+section > article:nth-child(2) {
+  transform: translateZ(-5000px);
+}
+section > article:nth-child(3) {
+  transform: translateZ(-10000px);
+}
+section > article:nth-child(4) {
+  transform: translateZ(-15000px);
+}
+section > article:nth-child(5) {
+  transform: translateZ(-20000px);
+}
+
+
+.downnav {
+  font-family: "Exo 2";
+  width: 100vw;
+  height: 60px;
+  position: fixed;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  opacity: 0.8;
+  bottom: 0;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.downnav a {
+  text-align: center;
+  color: cadetblue;
+}
+.downnav i {
+  display: block;
+  font-size: 20px;
+  margin-right:5px;
+}
+.downnav span {
+  font-family: "Exo 2";
+  font-size: 12px;
+}
+.downnav a:hover {
+  color: #555;
+  transform: scale(1.1);
+}
+
+@media screen and (max-width:1200px){/*브라우저의 넓이가 1200px이하일 경우*/
+  .gnb {right: 15%;}
+}
+
+@media screen and (max-width:899px) {
+  
+  h1 img {
+    display: none;
+  }
+  .gnb {
+    display: none;
+  }
+  article p {
+    display: none;
+  }
+  .copyright {
+    display: none;
+  }
+  .downnav {
+    display: flex;
+    z-index: 1212;
+  }
+
+  .obj11, .obj12,
+  .obj21,
+  .obj31,
+  .obj41, .obj42,
+  .obj51, .obj52 {
+    display: none;
+  }
+
+  .obj13,
+  .obj22,
+  .obj32,
+  .obj43,
+  .obj53 {
+    display: block;
+    position: absolute;
+    left: 50%;
+  }
+  .obj13 {
+    top: 15%;
+    transform: translateX(35%);
+  }
+  .obj22 {
+    transform: translateX(-50%);
+  }
+  .obj32 {
+    transform: translateX(25%);
+  }
+  .obj43 {
+    top: -10%;
+    transform: translateX(-40%);
+  }
+  .obj53 {
+    top: -5%;
+    transform: translateX(50%);
+  }
+  .scrollNav {
+    left: 10vw;
+    top: 60vh;
+  }
+  .scrollNav li {
+    width: 120px;
+    height: 30px;
+    margin-bottom: 15px;
+    color: #ddd;
+    text-align: center;
+  }
+  .scrollNav li em {
+    font-size: 12px;
+  }
+}

@@ -300,7 +300,7 @@ footer .wrap {
 footer .author li:first-child {
   font-size: 16px;
   font-weight: bold;
-  color: #331206;
+  color: cadetblue;
   margin-bottom: 20px;
 }
 
@@ -432,7 +432,7 @@ footer .links i {
   font-size: 12px;
 }
 .downnav a:hover {
-  color: #331206;
+  color: #555;
   transform: scale(1.1);
 }
 
