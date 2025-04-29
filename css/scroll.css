@@ -376,7 +376,7 @@ section > article:nth-child(5) {
   }
   .scrollNav {
     left: 10vw;
-    top: 60vh;
+    top: 50vh;
   }
   .scrollNav li {
     width: 120px;
