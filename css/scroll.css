@@ -291,11 +291,10 @@ section > article:nth-child(5) {
   position: fixed;
   display: none;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   background: #fff;
   opacity: 0.8;
   bottom: 0;
-  padding-left: 50px;
   padding-right: 50px;
 }
 
