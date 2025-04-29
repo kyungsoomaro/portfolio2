@@ -4,12 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Maro is</title>
+    <link href="css/header.css" rel="stylesheet">
     <link rel="stylesheet" href="css/marois.css">
     <script src="https://kit.fontawesome.com/e7294f412a.js" crossorigin="anonymous"></script>
-    <script src="js/music.js" defer></script>
+    <script src="js/header.js" defer></script>
+    <script src="js/marois.js" defer></script>
 </head>
 <body>
-    <header>
+     <!-- top버튼 -->
+  <div class="topbtn">
+    <img src="images/topbtn.png" alt="topbtn">
+  </div>
+
+  <!-- 스크롤 이동시 top메뉴 -->
+  <div class="topwrap">
+    <div class="topuphead">
+      <div class="topheadLeft">
+        <img src="images/logopen1.png">
+          <ul class="topnavi">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="scroll.html">SCROLL</a></li>
+            <li><a href="artist.html">ARTIST</a></li>
+            <li><a href="#">SHOP</a></li>
+            <li><a href="zzirang.html">ZZIRANG-E</a></li>
+            <li><a href="marois.html">MARO IS</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="topheadRight">
+        <a href="#"><i class="fa-solid fa-bell"></i></a>
+        <a href="#"><i class="fa-solid fa-calendar"></i></a>
+        <a href="#"><i class="fa-solid fa-basket-shopping"></i></a>
+        <a href="#" onclick="popup()"><i class="fa-solid fa-user"></i></a>
+      </div>
+    </div>
+  <header>
+    <!-- 탑메뉴 -->
+    <div class="wrap">
+    <div class="uphead">
+      <div class="headLeft">
+          <ul class="navi">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="scroll.html">SCROLL</a></li>
+            <li><a href="artist.html">ARTIST</a></li>
+            <li><a href="#">SHOP</a></li>
+            <li><a href="zzirang.html">ZZIRANG-E</a></li>
+            <li><a href="marois.html">MARO IS</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="headRight">
+        <a href="#"><i class="fa-solid fa-bell"></i></a>
+        <a href="#"><i class="fa-solid fa-calendar"></i></a>
+        <a href="#"><i class="fa-solid fa-basket-shopping"></i></a>
+        <a href="#" onclick="popup()"><i class="fa-solid fa-user"></i></a>
+      </div>
+    </div>
+
+    <!-- 로그인 팝업 -->
+
+    <div class="login">
+      <div class="container">
+        <div class="close">
+          <button onclick="pClose()">x</button></div>
+        <form>
+          <p>
+            <label for="user">사용자명 또는 이메일 주소</label><br>
+            <input type="text" id="user" name="user">
+          </p>
+          <p>
+            <label for="pw">암호</label><br>
+            <input type="password" id="pw" name="pw">
+          </p>
+          <button type="submit">로그인</button>
+        </form>
+      </div>
+    </div>
+  </header>
+    <article>
         <nav>
             <ul>
                 <li><a href="#home">메인</a></li>
@@ -19,7 +91,7 @@
                 <li><a href="#contact">연락처</a></li>
             </ul>
         </nav>
-    </header>
+    </article>
 
     <section id="home">
         <div class="container">
@@ -120,13 +192,12 @@
 
    <!-- down nav -->
   <div class="downnav">
-    <a href="index.html"><i class="fa-solid fa-house-user"></i><span>HOME</span></a>
-    
+    <a href="index.html"><i class="fa-solid fa-house-user"></i><span>HOME</span></a> 
     <a href="scroll.html"><i class="fa-solid fa-book-open"></i><span>SCROLL</span></a>
     <a href="artist.html"><i class="fa-solid fa-heart"></i><span>ARTIST</span></a>
-    <a href="marois.html"><i class="fa-solid fa-rectangle-list"></i><span>MARO IS</span></a>
     <a href="#"><i class="fa-solid fa-store"></i><span>SHOP</span></a>
-    <a href="#"><i class="fa-solid fa-paper-plane"></i><span>CONTACT US</span></a>
+    <a href="zzirang.html"><i class="fa-solid fa-paper-plane"></i><span>ZZIRANG-E</span></a>
+    <a href="marois.html"><i class="fa-solid fa-rectangle-list"></i><span>MARO IS</span></a>
   </div>
 
     

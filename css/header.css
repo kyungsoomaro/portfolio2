@@ -260,7 +260,7 @@ footer {
   }
   
   footer .links a:hover {
-    color: #331206;
+    color: cadetblue;
   }
   
   footer .links i {
@@ -298,6 +298,6 @@ footer {
     font-size: 12px;
   }
   .downnav a:hover {
-    color: cadetblue;
+    color: #555;
     transform: scale(1.1);
   }

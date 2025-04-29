@@ -23,14 +23,14 @@ body {
 }
 
 /* Header Styles */
-header {
+article {
     font-family: "Dongle";
     font-size: 24px;
     background-color: cadetblue;
     position: fixed;
     width: 100%;
     height: 50px;
-    top: 0;
+    top: 5%;
     z-index: 1000;
 }
 
@@ -257,37 +257,6 @@ footer {
   
   
 
-.downnav {
-    width: 100vw;
-    height: 60px;
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #fff;
-    opacity: 0.8;
-    bottom: 0;
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-  
-  .downnav a {
-    text-align: center;
-    color: cadetblue;
-  }
-  .downnav i {
-    display: block;
-    font-size: 20px;
-    margin-right:5px;
-  }
-  .downnav span {
-    font-family: "Exo 2";
-    font-size: 12px;
-  }
-  .downnav a:hover {
-    color: #331206;
-    transform: scale(1.1);
-  }
 
 /* Responsive Design */
 @media (max-width: 1200px) {
@@ -312,6 +281,23 @@ footer {
     .projects-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+    .wrap .uphead .headLeft {
+        display: none;
+      }
+      .topwrap .topuphead .topheadLeft {
+        display: none;
+      }
+      .downnav {
+        display: flex;
+      }
+      .downnav a {
+        width: 68px;
+        height: 44px;
+      }
+      .downhead img {
+        width: 50%;
+        height: auto;
+      }
 }
 
 @media (max-width: 768px) {

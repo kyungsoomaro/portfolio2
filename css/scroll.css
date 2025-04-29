@@ -272,6 +272,17 @@ section > article:nth-child(5) {
   transform: translateZ(-20000px);
 }
 
+.blinking {
+  animation: blink 2s step-start 0s infinite;
+  color: #555;
+  -webkit-text-stroke: 1px #ddd;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
 
 .downnav {
   font-family: "Exo 2";
