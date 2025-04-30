@@ -212,3 +212,34 @@ h1 {
     transform: translate(-50%, -50%);  
    }
 }
+
+@media (max-width: 412px) {
+  .btn {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .btn i {
+    display: inline-block;
+    position: relative;
+    padding: 4px 0;
+  }
+
+  .btn i::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100vw; 
+    height: 1px;
+    background-color: #ddd;
+    transform: translateX(-20px);
+  }
+
+  .btn a {
+    display: inline-block;
+    width: auto;
+    padding: 4px 0;
+  }
+}

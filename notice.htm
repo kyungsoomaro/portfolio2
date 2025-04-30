@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doh Kyung Soo</title>
+  <script src="https://kit.fontawesome.com/e7294f412a.js" crossorigin="anonymous"></script>
+
+  <link href="css/header.css" rel="stylesheet">
+  <link href="css/notice.css" rel="stylesheet">
+
+  <script src="js/header.js" defer></script>
+  <script src="js/notice.js" defer></script>
+</head>
+<body>
+   <!-- top버튼 -->
+   <div class="topbtn">
+    <img src="images/topbtn.png" alt="topb
+    tn">
+  </div>
+
+  <!-- 스크롤 이동시 top메뉴 -->
+  <div class="topwrap">
+    <div class="topuphead">
+      <div class="topheadLeft">
+        <img src="images/logopen1.png">
+          <ul class="topnavi">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="notice.htm">NOTICE</a></li>
+            <li><a href="scroll.html">SCROLL</a></li>
+            <li><a href="artist.html">ARTIST</a></li>
+            <li><a href="zzirang.html">ZZIRANG-E</a></li>
+            <li><a href="marois.html">MARO IS</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="topheadRight">
+        <a href="#"><i class="fa-solid fa-bell"></i></a>
+        <a href="#"><i class="fa-solid fa-calendar"></i></a>
+        <a href="#"><i class="fa-solid fa-basket-shopping"></i></a>
+        <a href="#" onclick="popup()"><i class="fa-solid fa-user"></i></a>
+      </div>
+    </div>
+  <header>
+    <!-- 탑메뉴 -->
+    <div class="wrap">
+    <div class="uphead">
+      <div class="headLeft">
+          <ul class="navi">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="notice.htm">NOTICE</a></li>
+            <li><a href="scroll.html">SCROLL</a></li>
+            <li><a href="artist.html">ARTIST</a></li>
+            <li><a href="zzirang.html">ZZIRANG-E</a></li>
+            <li><a href="marois.html">MARO IS</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="headRight">
+        <a href="#"><i class="fa-solid fa-bell"></i></a>
+        <a href="#"><i class="fa-solid fa-calendar"></i></a>
+        <a href="#"><i class="fa-solid fa-basket-shopping"></i></a>
+        <a href="#" onclick="popup()"><i class="fa-solid fa-user"></i></a>
+      </div>
+    </div>
+
+    <!-- 로그인 팝업 -->
+
+    <div class="login">
+      <div class="container">
+        <div class="close">
+          <button onclick="pClose()">x</button></div>
+        <form>
+          <p>
+            <label for="user">사용자명 또는 이메일 주소</label><br>
+            <input type="text" id="user" name="user">
+          </p>
+          <p>
+            <label for="pw">암호</label><br>
+            <input type="password" id="pw" name="pw">
+          </p>
+          <button type="submit">로그인</button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="notibg">
+      <img src="images/notibg.jpg" alt="배경이미지">
+      <h1>NOTICE</h1>
+    </div>
+    <div id="board">
+      <!-- 1~5 -->
+      <div class="post" data-index="1">
+        <div class="post-header">
+        <span>[안내] ZZirang-e & Charles POP-UP STORE : PICNIC DAY 현장 EVENT 안내</span>
+        <span class="toggle-btn">+</span>
+      </div>
+        <div class="details">
+          <img src="images/detail1.jpg" alt="이미지">
+        </div>
+      </div>
+      <div class="post" data-index="2">
+        <div class="post-header">
+          <span>[안내] ZZirang-e & Charles POP-UP STORE : PICNIC DAY 추가 안내</span>
+          <span class="toggle-btn">+</span>
+        </div>
+        <div class="details"><p>ZZirang-e & Charles POP-UP STORE : PICNIC DAY 연장 영업 관련하여 아래와 같이 안내 드립니다.<br><br>
+          📅 2025.05.03 SAT – 2025.05.13 TUE (KST)
+          📍더현대 서울 5층 ‘에픽 서울(EPIC SEOUL)’<br><br>
+          [MD 스토어존 연장 영업 안내]<br>
+          1. 2025.05.05 MON – 2025.05.06 TUE (KST)
+          연장 영업 시간 👉 20:00 ~ 20:30 (KST)<br>
+          2. 매주 금, 토, 일
+          연장 영업 시간 👉 20:00 ~ 20:30 (KST)<br>
+          - 해당 연장 영업 시간에는 현장 예약으로만 입장 가능합니다.<br>
+          - ‘현장 대기 예약’을 원하시는 분들은 현장 웨이팅 등록 부탁드리며, 입장 가능한 시간에 메시지 또는 메일을 통한 입장 호출 안내를 드릴 예정입니다.<br>
+          - 입장 대기 등록은 본인 1명만 가능하며, 등록 후 당일 방문만 가능합니다.<br>
+          - 입장 알림을 받으시면 매장 입장 대기줄에서 대기해 주세요. 대기 번호 확인 후 입장이 가능합니다.<br>
+          - 알림 수신 후 20분 이상 경과 시 대기 예약이 자동 취소됩니다.
+          </p></div>
+      </div>
+      <div class="post" data-index="3">
+        <div class="post-header">
+          <span>[공지] ZZirang-e & Charles POP-UP STORE : PICNIC DAY 온라인 사전 예약 OPEN</span>
+          <span class="toggle-btn">+</span>
+        </div>
+        <div class="details">
+          <img src="images/detail3.jpg" alt="이미지">
+        </div>
+      </div>
+      <div class="post" data-index="4">
+        <div class="post-header">
+          <span>[공지] ZZirang-e & Charles POP-UP STORE : PICNIC DAY 도경수 공식 팬클럽 멤버십 회원 사전 예약 OPEN</span>
+          <span class="toggle-btn">+</span>
+        </div>
+        <div class="details">
+          <img src="images/detail4.jpg" alt="이미지">
+        </div>
+      </div>
+      <div class="post" data-index="5">
+        <div class="post-header">
+          <span>[안내] ZZirang-e & Charles POP-UP STORE : PICNIC DAY Official MD 안내</span>
+          <span class="toggle-btn">+</span>
+        </div>
+        <div class="details">
+          <img src="images/detail5.jpg" alt="이미지">
+        </div>
+      </div>
+  
+      <div class="post" data-index="6">
+        <div class="post-header">
+          <span>[공지] 2025 DOH KYUNG SOO ASIA CONCERT TOUR <DO it! in Seoul> 팬클럽 선예매 공지</span>
+          <span class="toggle-btn">+</span>
+        </div>
+        <div class="details">
+          <img src="images/detail6.jpg" alt="이미지">
+        </div>
+      </div>
+      <div class="post" data-index="7">
+        <div class="post-header">
+          <span>[안내] ZZirang-e & Charles POP-UP STORE : PICNIC DAY 온라인 사전 예약 방법 및 유의사항</span>
+        <span class="toggle-btn">+</span>
+        </div>
+        <div class="details">
+          <p>ZZirang-e & Charles POP-UP STORE : PICNIC DAY 연장 영업 관련하여 아래와 같이 안내 드립니다.<br><br>
+            📅 2025.05.03 SAT – 2025.05.13 TUE (KST)
+            📍더현대 서울 5층 ‘에픽 서울(EPIC SEOUL)’<br><br>
+            [MD 스토어존 연장 영업 안내]<br>
+            1. 2025.05.05 MON – 2025.05.06 TUE (KST)
+            연장 영업 시간 👉 20:00 ~ 20:30 (KST)<br>
+            2. 매주 금, 토, 일
+            연장 영업 시간 👉 20:00 ~ 20:30 (KST)<br>
+            - 해당 연장 영업 시간에는 현장 예약으로만 입장 가능합니다.<br>
+            - ‘현장 대기 예약’을 원하시는 분들은 현장 웨이팅 등록 부탁드리며, 입장 가능한 시간에 메시지 또는 메일을 통한 입장 호출 안내를 드릴 예정입니다.<br>
+            - 입장 대기 등록은 본인 1명만 가능하며, 등록 후 당일 방문만 가능합니다.<br>
+            - 입장 알림을 받으시면 매장 입장 대기줄에서 대기해 주세요. 대기 번호 확인 후 입장이 가능합니다.<br>
+            - 알림 수신 후 20분 이상 경과 시 대기 예약이 자동 취소됩니다.
+            </p>
+        </div>
+      </div>
+      <div class="post" data-index="8">
+        <div class="post-header">
+          <span>[안내] ZZirang-e & Charles POP-UP STORE : PICNIC DAY INFORMATION</span>
+          <span class="toggle-btn">+</span>
+        </div>
+        <div class="details">
+          <img src="images/detail6.jpg" alt="이미지">
+        </div>
+      </div>
+      <div class="post" data-index="9">
+        <div class="post-header">
+          <span>[공지] ZZirang-e & Charles POP-UP STORE : PICNIC DAY COMING SOON</span>
+          <span class="toggle-btn">+</span>
+        </div>
+        <div class="details">
+          <img src="images/detail6.jpg" alt="이미지">
+        </div>
+      </div>
+      <div class="post" data-index="10">
+        <div class="post-header">
+          <span>[안내] 2025 DOH KYUNG SOO ASIA CONCERT TOUR <DO it! in Seoul> 안내</span>
+            <span class="toggle-btn">+</span>
+        </div>
+        <div class="details">
+          <img src="images/detail6.jpg" alt="이미지">
+        </div>
+      </div>
+  
+      <!-- 11~15 -->
+      <div class="post" data-index="11">
+        <div class="post-header">
+          <span>[안내] 2025 DOH KYUNG SOO ASIA CONCERT TOUR <DO it!> 안내</span>
+            <span class="toggle-btn">+</span>
+        </div>
+        <div class="details">
+          <img src="images/detail6.jpg" alt="이미지">
+        </div>
+      </div>
+      <div class="post" data-index="12">
+        <div class="post-header">
+          <span>[안내] 도경수 공식 응원봉 판매 안내</span>
+          <span class="toggle-btn">+</span>
+        </div>
+        <div class="details">
+          <img src="images/detail6.jpg" alt="이미지">
+        </div>
+      </div>
+      <div class="post" data-index="13">
+        <div class="post-header">
+          <span>[안내] 도경수 공식 팬클럽 2기 오픈 안내</span>
+          <span class="toggle-btn">+</span>
+        </div>
+        <div class="details">
+          <img src="images/detail6.jpg" alt="이미지">
+        </div>
+      </div>
+      <div class="post" data-index="14">
+        <div class="post-header">
+          <span>[공지] 개인정보처리방침 및 청소년보호정책 개정안내</span>
+          <span class="toggle-btn">+</span>
+        </div>
+        <div class="details">
+          <img src="images/detail6.jpg" alt="이미지">
+        </div>
+      </div>
+      <div class="post" data-index="15">
+        <div class="post-header">
+          <span>[안내] 도경수 공식 응원봉 모바일 앱 출시 안내</span>
+          <span class="toggle-btn">+</span>
+        </div>
+        <div class="details">
+          <img src="images/detail6.jpg" alt="이미지">
+        </div>
+      </div>
+    </div>
+  
+    <div class="pagination" id="pagination"></div>
+  
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <ul class="author">
+        <li>Doh Kyung Soo Fan Maro</li>
+        <li>&copy; 2025 All rights reserved.<br>
+        Design by Maro</li>
+      </ul>
+      <ul class="address">
+        <li>pugoni@hanmail.net</li>
+        <li>+82 10 1993 0112</li>
+      </ul>
+      <div class="links">
+        <ul>
+          <li><a href="https://x.com/kssooni"><i class="fab fa-twitter-square"></i>X</a></li>
+          <li><a href="https://www.instagram.com/ksoosuni/"><i class="fa-brands fa-instagram"></i>Instagram</a></li>
+          <li><a href="https://www.youtube.com/@kssooni"><i class="fa-brands fa-youtube"></i>Youtube</a></li>
+
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- down nav -->
+  <div class="downnav">
+    <a href="index.html"><i class="fa-solid fa-house-user"></i><span>HOME</span></a>
+    <a href="notice.htm"><i class="fa-solid fa-store"></i><span>NOTICE</span></a>
+    <a href="scroll.html"><i class="fa-solid fa-book-open"></i><span>SCROLL</span></a>
+    <a href="artist.html"><i class="fa-solid fa-heart"></i><span>ARTIST</span></a>
+    <a href="zzirang.html"><i class="fa-solid fa-paper-plane"></i><span>ZZIRANG</span></a>
+    <a href="marois.html"><i class="fa-solid fa-rectangle-list"></i><span>MARO IS</span></a>
+  </div>
+
+</body>
+</html>
