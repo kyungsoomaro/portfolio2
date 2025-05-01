@@ -361,7 +361,7 @@ section > article:nth-child(5) {
   }
   .obj13 {
     top: 15%;
-    transform: translateX(35%);
+    transform: translateX(-35%) translateZ(0);
   }
   .obj22 {
     transform: translateX(-50%);

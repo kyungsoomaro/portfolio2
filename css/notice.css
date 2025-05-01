@@ -9,10 +9,6 @@ body {
   overflow-x: hidden;
 }
 
-header {
-  background-color: #fff;
-  position: relative;
-}
 
 .notibg {
   position: relative;
@@ -31,7 +27,7 @@ header {
   font-family: "Exo 2";
   position: absolute;
   bottom: 30px;
-  left: 250px;
+  left: 200px;
   transform: translate(-50%, -50%);
   color: #ddd;
   font-size: 5rem;

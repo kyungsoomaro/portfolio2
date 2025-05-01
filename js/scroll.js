@@ -37,6 +37,7 @@ navItems.forEach((item, idx) => {
   })
 })
 
+
 //마우스 이동 이벤트
 document.body.addEventListener("mousemove", (e) => {
   //마우스 좌표값 구하기(위치값에 특정값을 나눠서 값을 축소시킴)

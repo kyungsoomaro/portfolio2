@@ -30,7 +30,7 @@ article {
     position: fixed;
     width: 100%;
     height: 50px;
-    top: 5%;
+    top: 50px;
     z-index: 1000;
 }
 

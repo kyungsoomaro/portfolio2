@@ -423,11 +423,18 @@ figure section article .inner .txt {
   margin-bottom: 15vh;
 }
 
-@media screen and (max-height:980px) {
-  
+figure > p {
+  display: none;
+}
 
-  figure > p {
-    display: none;
+@media screen and (max-width:412px) {
+  
+  figure section article .inner {
+    height:600px;
+    overflow-y: auto;
   }
 
+  figure section article .inner .txt p {
+    display: none;
+  }
 }

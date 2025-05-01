@@ -74,12 +74,7 @@ body {
     font-weight: bold;
   }
   
-  .topwrap .topheadRight {
-    position: absolute;
-    top: 10%;
-    right: 10%;
-  }
-  
+ 
   .topwrap .topheadRight i {
     color: cadetblue;
     opacity: 0.7;
@@ -97,10 +92,11 @@ body {
 
 header {
   background-color: #fff;
-  position: relative;
+  position: fixed;
+  top:0; left:0;
   height:50px;
-  max-width: 1300px;
-  margin: auto;
+  width:100%;
+  z-index: 999;
 }
 
 /* 탑메뉴 */
@@ -109,19 +105,26 @@ header {
   font-family: "Exo 2";
 }
 
-.wrap .uphead {
-  margin-top: 15px;
-}
-
 .wrap .uphead .headLeft {
   position: absolute;
-  top: 5%;
+  top:0;
   left: 10%;
+  height:50px;
 }
 
 .wrap .uphead .headLeft ul {
+  height:50px;
   display: flex;
+  align-items: center;
   gap: 25px;
+}
+
+.wrap .uphead .headLeft ul li:first-child{
+  display:none;
+}
+
+.wrap .uphead .headLeft ul img{
+  width:30px;
 }
 
 .wrap .uphead .headLeft a {
@@ -139,7 +142,7 @@ header {
 
 .wrap .headRight {
   position: absolute;
-  top: 5%;
+  top: 15px;
   right: 10%;
 }
 
@@ -149,6 +152,10 @@ header {
   padding: 0 10px 0 10px;
   font-size: 20px;
   transition: 0.3s ease;
+}
+
+.wrap .on i {
+  color:cadetblue;
 }
 
 .wrap .headRight i:hover {
@@ -269,35 +276,33 @@ footer {
   
 /* 화면크기 조정시 하단 네비게이션 */
 
-  .downnav {
-    width: 100vw;
-    height: 60px;
-    position: fixed;
-    display: none;
-    align-items: center;
-    justify-content: space-between;
-    background: #fff;
-    opacity: 0.8;
-    bottom: 0;
-    padding-left: 50px;
-    padding-right: 50px;
-    z-index: 999;
-  }
-  
-  .downnav a {
-    text-align: center;
-    color: cadetblue;
-  }
-  .downnav i {
-    display: block;
-    font-size: 20px;
-    margin-right:5px;
-  }
-  .downnav span {
-    font-family: "Exo 2";
-    font-size: 12px;
-  }
-  .downnav a:hover {
-    color: #555;
-    transform: scale(1.1);
-  }
+.downnav {
+  font-family: "Exo 2";
+  width: 100vw;
+  height: 60px;
+  position: fixed;
+  display: none;
+  align-items: center;
+  justify-content: space-around;
+  background: #fff;
+  opacity: 0.8;
+  bottom: 0;
+}
+
+.downnav a {
+  text-align: center;
+  color: cadetblue;
+}
+.downnav i {
+  display: block;
+  font-size: 20px;
+  margin-right:5px;
+}
+.downnav span {
+  font-family: "Exo 2";
+  font-size: 12px;
+}
+.downnav a:hover {
+  color: #555;
+  transform: scale(1.1);
+}
