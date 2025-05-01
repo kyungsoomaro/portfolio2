@@ -367,7 +367,7 @@ section > article:nth-child(5) {
     transform: translateX(-50%);
   }
   .obj32 {
-    transform: translateX(25%);
+    transform: translateX(-40%);
   }
   .obj43 {
     top: -10%;
@@ -375,7 +375,7 @@ section > article:nth-child(5) {
   }
   .obj53 {
     top: -5%;
-    transform: translateX(50%);
+    transform: translateX(-50%);
   }
   .scrollNav {
     left: 10vw;

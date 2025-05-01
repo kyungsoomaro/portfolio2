@@ -414,8 +414,6 @@ footer .links i {
   background: #fff;
   opacity: 0.8;
   bottom: 0;
-  padding-left: 50px;
-  padding-right: 50px;
 }
 
 .downnav a {
@@ -474,7 +472,7 @@ footer .links i {
   }
 
   .login > .container {
-   top: 20%;
+   top: 30%;
    left: 50%;
    transform: translate(-50%, -50%);  
   }

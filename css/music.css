@@ -434,7 +434,4 @@ figure > p {
     overflow-y: auto;
   }
 
-  figure section article .inner .txt p {
-    display: none;
-  }
 }
