@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+
+* {margin: 0; padding: 0; box-sizing: border-box;}
+ul {list-style: none;}
+a {text-decoration: none;}
+li {list-style: none;}
+
+body {
+  overflow-x: hidden;
+}
+
+/* 상단 이미지 */
+.header-image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.header-image img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* 상품 카드 */
+.product-container {
+  max-width: 1300px;
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 40px;
+}
+
+.product-card {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.product-card img {
+  width: 244px;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.product-name {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #555;
+}
+
+.product-price {
+  margin-top: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #555;
+}
+
+@media screen and (max-width: 899px) {
+
+  footer {
+    width: 100%;
+    overflow: hidden;
+  }
+  footer .wrap {
+    width: 1024px;
+  }
+  footer ul {
+    margin-right: 10px;
+  }
+  .wrap .uphead .headLeft {
+    display: none;
+  }
+  .topwrap .topuphead .topheadLeft {
+    display: none;
+  }
+  .downnav {
+    display: flex;
+  }
+  .downnav a {
+    width: 68px;
+    height: 44px;
+  }
+  .downhead img {
+    width: 50%;
+    height: auto;
+  }
+
+  .login > .container {
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+   }
+
+  .tab-menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .product-card {
+    margin: 5px;
+  }
+  .product-card img {
+    width: 196px;
+  }
+
+  .product-name {
+    font-size: 14px;
+  }
+
+  .product-price {
+    font-size: 16px;
+  }
+
+  .bottom-link {
+    text-align: center;
+    margin-top: 40px;
+  }
+}
+

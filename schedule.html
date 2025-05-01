@@ -5,23 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Doh Kyung Soo</title>
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-
-  <link href="css/header.css" rel="stylesheet">
-
-  <link href="css/zzirang.css" rel="stylesheet">
-
   <script src="https://kit.fontawesome.com/e7294f412a.js" crossorigin="anonymous"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <link href="css/header.css" rel="stylesheet">
+  <link href="css/schedule.css" rel="stylesheet">
 
- <script src="js/zzirang.js" defer></script>
+  <script src="js/header.js" defer></script>
 
- <script src="js/header.js" defer></script>
+  <script src="js/schedule.js" defer></script>
+
 
 </head>
 <body>
-  
   <!-- top버튼 -->
   <div class="topbtn">
     <img src="images/topbtn.png" alt="topbtn">
@@ -94,59 +89,44 @@
   </header>
 
   <main>
-    <section>
-       <!-- Swiper -->
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <img src="images/zzirang13.jpg" />
+    <div class="calendar-container">
+
+      <div class="month-title">
+        <span id="monthYear"></span>
       </div>
-      <div class="swiper-slide">
-        <img src="images/zzirang12.jpg" />
+
+      <div class="controls">
+        <button id="prevMonthBtn">이전 달</button>
+        <span id="monthYear"></span>
+        <button id="nextMonthBtn">다음 달</button>
       </div>
-      <div class="swiper-slide">
-        <img src="images/zzirang11.jpg" />
+
+      <div id="days-of-week">
+        <div>일</div>
+        <div>월</div>
+        <div>화</div>
+        <div>수</div>
+        <div>목</div>
+        <div>금</div>
+        <div>토</div>
       </div>
-      <div class="swiper-slide">
-        <img src="images/zzirang10.jpg" />
-      </div>
-      <div class="swiper-slide">
-        <img src="images/zzirang9.jpg" />
-      </div>
-      <div class="swiper-slide">
-        <img src="images/zzirang8.jpg" />
-      </div>
-      <div class="swiper-slide">
-        <img src="images/zzirang7.jpg" />
-      </div>
-      <div class="swiper-slide">
-        <img src="images/zzirang6.jpg" />
-      </div>
-      <div class="swiper-slide">
-        <img src="images/zzirang5.jpg" />
-      </div>
-      <div class="swiper-slide">
-        <img src="images/zzirang4.jpg" />
-      </div>
-      <div class="swiper-slide">
-        <img src="images/zzirang3.jpg" />
-      </div>
+
+      <div id="calendar"></div>
     </div>
-    <div class="swiper-pagination"></div>
-  </div>
-    </section>
 
-    <section>
-      <div class="youtube">
-        <!-- Additional required wrapper -->
-        <div class="youtube-box">
-          <!-- Slides -->
-          <div class="movie"><iframe width="560" height="315" src="https://www.youtube.com/embed/-jZyMgTGqrU?si=AU3DCFKbMvXAAgVk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-          <div class="movie"><iframe width="560" height="315" src="https://www.youtube.com/embed/eIyVDRqWhNk?si=h3yimUkk5Vr-U8Qp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-        </div>
-      </div>
-    </section>
+    <!-- 일정 추가 모달 -->
+    <div id="schedule-modal">
+      <h2>일정 추가</h2>
+      <input type="text" id="schedule-input" placeholder="일정을 입력하세요" />
+      <button onclick="addSchedule()">추가</button>
+      <button onclick="closeModal()">닫기</button>
+    </div>
 
+    <!-- 일정 리스트 -->
+    <div id="schedule-list">
+      <h2>일정 목록</h2>
+      <div id="schedule-items"></div>
+    </div>
   </main>
 
   <footer>
@@ -171,6 +151,8 @@
       </div>
     </footer>
     
+    
+    
     <!-- down nav -->
     <div class="downnav">
       <a href="index.html"><i class="fa-solid fa-house-user"></i><span>HOME</span></a>
@@ -180,5 +162,6 @@
       <a href="zzirang.html"><i class="fa-solid fa-cat"></i><span>ZZIRANG</span></a>
       <a href="marois.html"><i class="fa-solid fa-rectangle-list"></i><span>MARO IS</span></a>
     </div>
+    
 </body>
 </html>

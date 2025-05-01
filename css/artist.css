@@ -220,11 +220,11 @@ h1 {
   }
 
   .btn i {
-    display: inline-block;
-    position: relative;
-    padding: 4px 0;
+    display: none;
+    /* position: relative;
+    padding: 4px 0; */
   }
-
+/* 
   .btn i::after {
     content: "";
     display: block;
@@ -235,7 +235,7 @@ h1 {
     height: 1px;
     background-color: #ddd;
     transform: translateX(-20px);
-  }
+  } */
 
   .btn a {
     display: inline-block;
